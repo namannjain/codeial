@@ -4,19 +4,19 @@ module.exports.profile = function(req,res){
     // return res.end('<h1> User Profile </h1>')
     
     //Show details of sign in user
-    if(req.cookies.user_id){
-        User.findById(req.cookies.user_id, function(err, user){
-            if(user){
-                return res.render('user_profile', {
-                    title: "User Profile", 
-                    user: user
-                })
-            }
-            return res.redirect('/users/sign-in');  
-        })
-    }else{
-        return res.redirect('/users/sign-in');
-    }
+    // if(req.cookies.user_id){
+    //     User.findById(req.cookies.user_id, function(err, user){
+    //         if(user){
+    //             return res.render('user_profile', {
+    //                 title: "User Profile", 
+    //                 user: user
+    //             })
+    //         }
+    //         return res.redirect('/users/sign-in');  
+    //     })
+    // }else{
+    //     return res.redirect('/users/sign-in');
+    // }
 
     // return res.render('users', {
     //     title: "Users Profile"
