@@ -1,0 +1,15 @@
+#layout-footer {
+  color: white;
+  background: grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px; }
+  #layout-footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear; }
+    #layout-footer a:hover {
+      color: black; }
+  #layout-footer ul {
+    list-style: none; }

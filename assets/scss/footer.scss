@@ -1,0 +1,21 @@
+#layout-footer{
+    color: white;
+    background: grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
+
+    a{
+        color: white;
+        text-decoration: none;
+        transition: 0.2s linear;
+        &:hover{
+            color: black;
+        }
+    }
+
+    ul{
+        list-style: none;
+    }
+}
